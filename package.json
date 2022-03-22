@@ -1,0 +1,23 @@
+{
+  "name": "gmstudios",
+  "version": "0.0.1",
+  "description": "Landing page of gmstudios",
+  "main": "index.js",
+  "authors": {
+    "name": "Renatto",
+    "email": "renattominayarojas@gmail.com"
+  },
+  "repository": "/gmstudios",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.2",
+    "vuesax": "^4.0.1-alpha.25"
+  }
+}
