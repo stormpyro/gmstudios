@@ -22,7 +22,9 @@
           Especialistas en comercio y derecho aduanero.
         </p>
         <div style="display: flex">
-          <vs-button href="#contact" size="large"> Agenda una cita </vs-button>
+          <vs-button href="#contact" size="large">
+            Agenda una reunion
+          </vs-button>
           <vs-button
             blank
             border
