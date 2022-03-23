@@ -39,7 +39,7 @@ export default {
           href: "#services",
         },
         { label: "Formación Profesional", id: "formacion", href: "#cv" },
-        { label: "Agende una cita", id: "dates" },
+        { label: "Contacto", id: "dates", href: "#contact" },
       ],
     };
   },

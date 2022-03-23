@@ -22,13 +22,13 @@
           Especialistas en comercio y derecho aduanero.
         </p>
         <div style="display: flex">
-          <vs-button size="large"> Agenda una cita </vs-button>
+          <vs-button href="#contact" size="large"> Agenda una cita </vs-button>
           <vs-button
             blank
+            border
+            color="dark"
             href="https://pe.linkedin.com/in/gilberto-minaya-32963110b"
             icon
-            color="dark"
-            border
           >
             <i class="bx bxl-linkedin"></i>
           </vs-button>
@@ -45,6 +45,7 @@
     <conocenos id="conocenos"></conocenos>
     <services id="services"></services>
     <cv id="cv"></cv>
+    <contact id="contact"></contact>
   </div>
 </template>
 <script>
