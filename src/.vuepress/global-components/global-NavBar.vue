@@ -1,5 +1,5 @@
 <template>
-  <vs-navbar shadow-scroll fixed v-model="active">
+  <vs-navbar class="navbar" shadow-scroll fixed v-model="active">
     <div :key="idx" v-for="(navBarItem, idx) in navBarItems">
       <vs-navbar-group v-if="navBarItem.subItems">
         {{ navBarItem.label }}
@@ -16,7 +16,9 @@
       </vs-navbar-group>
       <vs-navbar-item
         :active="active == navBarItem.id"
+        :href="navBarItem.href"
         :id="navBarItem.id"
+        target="_self"
         v-else
       >
         {{ navBarItem.label }}
@@ -28,21 +30,16 @@
 export default {
   data() {
     return {
-      active: "cv",
+      active: "",
       navBarItems: [
-        { label: "Formación Profesional", id: "cv" },
-        { label: "Especialidades", id: "specialities" },
-        { label: "Contacto", id: "contact" },
-        { label: "Agende una cita", id: "dates" },
+        { label: "Conocenos", id: "conoce", href: "#conocenos" },
         {
           label: "Servicios",
-          id: "services",
-          subItems: [
-            { label: "Cartas notariales", id: "letters" },
-            { label: "Demandas laborales", id: "cases" },
-            { label: "Revision Aduanera", id: "revision" },
-          ],
+          id: "servicios",
+          href: "#services",
         },
+        { label: "Formación Profesional", id: "formacion", href: "#cv" },
+        { label: "Agende una cita", id: "dates" },
       ],
     };
   },
