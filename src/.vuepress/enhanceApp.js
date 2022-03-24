@@ -1,8 +1,6 @@
 import Vuesax from "vuesax";
 import "vuesax/dist/vuesax.css";
 import "boxicons/css/boxicons.min.css";
-import VueCarousel from "vue-carousel";
-import { Carousel, Slide } from "vue-carousel";
 
 const requireComponent = require.context(
   "./global-components",
@@ -18,9 +16,6 @@ export default ({
 }) => {
   // ...apply enhancements for the site.
   Vue.use(Vuesax);
-  Vue.use(VueCarousel);
-  Vue.component(Carousel);
-  Vue.component(Slide);
 
   // Register all global-components
   requireComponent.keys().forEach((fileName) => {

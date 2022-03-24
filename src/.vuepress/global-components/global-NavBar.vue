@@ -1,25 +1,11 @@
 <template>
   <vs-navbar class="navbar" shadow-scroll fixed v-model="active">
     <div :key="idx" v-for="(navBarItem, idx) in navBarItems">
-      <vs-navbar-group v-if="navBarItem.subItems">
-        {{ navBarItem.label }}
-        <template #items>
-          <vs-navbar-item
-            :active="active == subItem.id"
-            :id="subItem.id"
-            :key="sub_idx"
-            v-for="(subItem, sub_idx) in navBarItem.subItems"
-          >
-            {{ subItem.label }}
-          </vs-navbar-item>
-        </template>
-      </vs-navbar-group>
       <vs-navbar-item
         :active="active == navBarItem.id"
-        :href="navBarItem.href"
         :id="navBarItem.id"
+        :to="navBarItem.href"
         target="_self"
-        v-else
       >
         {{ navBarItem.label }}
       </vs-navbar-item>
@@ -30,16 +16,16 @@
 export default {
   data() {
     return {
-      active: "",
+      active: "conocenos",
       navBarItems: [
-        { label: "Conocenos", id: "conoce", href: "#conocenos" },
+        { label: "Conocenos", id: "conocenos", href: "#conocenos" },
         {
           label: "Servicios",
-          id: "servicios",
+          id: "services",
           href: "#services",
         },
-        { label: "Formación Profesional", id: "formacion", href: "#cv" },
-        { label: "Contacto", id: "dates", href: "#contact" },
+        { label: "Formación Profesional", id: "cv", href: "#cv" },
+        { label: "Contacto", id: "contact", href: "#contact" },
       ],
     };
   },
