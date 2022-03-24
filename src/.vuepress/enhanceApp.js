@@ -1,6 +1,9 @@
 import Vuesax from "vuesax";
 import "vuesax/dist/vuesax.css";
 import "boxicons/css/boxicons.min.css";
+import Vue from "vue";
+
+export const EventBus = new Vue();
 
 const requireComponent = require.context(
   "./global-components",

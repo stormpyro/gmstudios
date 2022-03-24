@@ -2,7 +2,7 @@
   <vs-row>
     <vs-row
       class="flex-center"
-      style="height: 600px; display: flex; align-items: center"
+      style="height: 500px; display: flex; align-items: center"
     >
       <vs-col
         style="
@@ -20,7 +20,7 @@
           Especialistas en comercio y derecho aduanero.
         </p>
         <div style="display: flex">
-          <vs-button href="#contact" size="large">
+          <vs-button @click="updateRoute" size="large">
             Agenda una reunion
           </vs-button>
           <vs-button
@@ -36,9 +36,9 @@
       </vs-col>
       <vs-col style="display: flex; align-items: center; height: 100%" w="6">
         <img
-          style="max-width: 100%; height: auto"
           :src="require('../public/images/hammereditado.png')"
           alt="hammer"
+          style="max-width: 100%; max-height: 100%; object-fit: cover"
         />
       </vs-col>
     </vs-row>
@@ -74,3 +74,13 @@
     </vs-row>
   </vs-row>
 </template>
+<script>
+import { EventBus } from "../enhanceApp";
+export default {
+  methods: {
+    updateRoute: function () {
+      EventBus.$emit("update-route", "contact");
+    },
+  },
+};
+</script>
