@@ -9,16 +9,16 @@
     >
       <h2>Formacion Profesional</h2>
       <vs-row style="display: flex; justify-content: center">
-        <vs-col w="8">
+        <vs-col sm="12" w="8">
           <vs-row style="display: flex">
-            <vs-col w="5">
+            <vs-col w="12" style="display: flex; justify-content: center">
               <img
-                style="max-width: 100%; height: auto"
+                style="max-width: 100%; max-height: 300px"
                 :src="require('../public/images/hammereditado.png')"
                 alt="hammer"
               />
             </vs-col>
-            <vs-col w="7">
+            <vs-col w="12">
               <h3>Gilberto Minaya Cerna</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio

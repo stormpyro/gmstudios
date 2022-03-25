@@ -12,6 +12,7 @@
         "
         vs-type="flex"
         vs-justify="center"
+        sm="12"
         w="6"
       >
         <h1>GM Studios</h1>
@@ -34,7 +35,16 @@
           </vs-button>
         </div>
       </vs-col>
-      <vs-col style="display: flex; align-items: center; height: 100%" w="6">
+      <vs-col
+        style="
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding: 40px 60px;
+        "
+        v-if="windowWidth > 900"
+        w="6"
+      >
         <img
           :src="require('../public/images/hammereditado.png')"
           alt="hammer"
@@ -77,10 +87,23 @@
 <script>
 import { EventBus } from "../enhanceApp";
 export default {
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
   methods: {
     updateRoute: function () {
       EventBus.$emit("update-route", "contact");
     },
+  },
+  mounted: function () {
+    window.addEventListener("resize", () => {
+      this.windowWidth = window.innerWidth;
+    });
+  },
+  beforeDestroy: function () {
+    window.removeEventListener("resize", () => {});
   },
 };
 </script>

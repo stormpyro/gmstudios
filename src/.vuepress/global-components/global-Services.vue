@@ -8,7 +8,14 @@
       "
     >
       <h2 style="font-size: 1.6rem !important">Nuestros Servicios</h2>
-      <div style="display: flex; flex-wrap: wrap">
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        "
+      >
         <vs-card
           :key="idx"
           style="margin: 5px"
