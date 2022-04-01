@@ -14,7 +14,7 @@
         v-for="(canal, idx) in contacts"
         style="display: flex; align-items: center"
       >
-        <vs-button :color="canal.color" :href="canal.href" blank border icon>
+        <vs-button :color="canal.color" :href="canal.href" blank icon>
           <i :class="canal.icon"></i>
         </vs-button>
         <p style="margin-left: 5px">{{ canal.text }}</p>
@@ -30,19 +30,19 @@ export default {
         {
           icon: "bx bxl-whatsapp",
           text: "953914912 - 960108506",
-          color: "success",
+          color: "whatsapp",
           href: "https://wa.me/51953914912?text=Hola%20quisiera%20agendar%20una%20reunion",
         },
         {
           icon: "bx bxl-gmail",
           text: "gminaya03@gmail.com",
-          color: "danger",
+          color: "youtube",
           href: "mailto:gminaya03@gmail.com",
         },
         {
           icon: "bx bxl-linkedin",
           text: "gilberto-minaya-32963110b",
-          color: "primary",
+          color: "linkedin",
           href: "https://pe.linkedin.com/in/gilberto-minaya-32963110b",
         },
       ],

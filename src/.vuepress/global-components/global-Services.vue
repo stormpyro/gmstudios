@@ -63,16 +63,6 @@ export default {
           text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
           img: "../public/images/hammereditado.png",
         },
-        {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-          img: "../public/images/hammereditado.png",
-        },
-        {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-          img: "../public/images/hammereditado.png",
-        },
       ],
     };
   },
