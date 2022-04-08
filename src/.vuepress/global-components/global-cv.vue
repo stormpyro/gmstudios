@@ -43,14 +43,15 @@
                 </vs-button>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                sapiente facilis eveniet doloribus vero, voluptatum nisi sint
-                dolores ipsum asperiores ipsam aspernatur quo error doloremque
-                nobis deleniti deserunt, quidem at.
+                Soy abogado especializado en derecho aduanero y comercio
+                exterior. Tengo experiencia comprobada de más de 30 años en el
+                sector con operaciones como clasificación arancelaria,
+                valoración aduanera, convenios internacionales con mercancías
+                restringidas y prohibidas.
               </p>
               <p>
                 Miembro del colegio de abogados de lima.
-                <strong>CAL: 1454212</strong>
+                <strong>CAL: 86771</strong>
               </p>
             </vs-col>
           </vs-row>
@@ -63,10 +64,22 @@
           <vs-row style="flex-direction: column">
             <h3>Experiencia Profesional</h3>
             <ul>
-              <li>Lorem ipsum dolor sitDucimus dolorem, saepe voluptatibus</li>
-              <li>Lorem ipsum dolor sitDucimus dolorem, saepe voluptatibus</li>
-              <li>Lorem ipsum dolor sitDucimus dolorem, saepe voluptatibus</li>
-              <li>Lorem ipsum dolor sitDucimus dolorem, saepe voluptatibus</li>
+              <li>
+                Licensed Customs Broker - Hartrodt - Mar de 2021 - dic de 2021
+                10 meses
+              </li>
+              <li>
+                Asesor Legal - Hansa Aduanas - feb de 2020 - dic de 2021 - 1 año
+                11 meses
+              </li>
+              <li>
+                Revisor en gestion aduanera - Savar Corporación Logística - ene
+                de 2008 - abr de 2019 - 11 años 4 meses
+              </li>
+              <li>
+                Sectorista en gestión aduanera - DHL Global Forwarding - feb de
+                2005 - dic de 2006 - 1 año 11 meses
+              </li>
             </ul>
           </vs-row>
         </vs-col>
@@ -78,7 +91,16 @@
 export default {
   data() {
     return {
-      areas: ["Derecho aduanero", "Comercio Exterior", "Aduanas"],
+      areas: [
+        "Derecho aduanero",
+        "Comercio Exterior",
+        "Aduanas",
+        "Contrataciones del estado",
+        "Veedor OSCE",
+        "Derecho administrativo",
+        "PAS",
+        "Delitos Aduaneros",
+      ],
     };
   },
 };

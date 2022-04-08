@@ -44,23 +44,18 @@ export default {
     return {
       services: [
         {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          title: "Capacitación en derecho aduanero y comercio exterior",
+          text: "Dirigido a: exportadores, importadores, agencias de aduana, estudiantes de comercio exterior y público en general.",
           img: "../public/images/hammereditado.png",
         },
         {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          title: "Litigaciones en procesos legales",
+          text: "Áreas: Derecho comercial, derecho penal en delitos aduaneros y responsabilidad contractual.",
           img: "../public/images/hammereditado.png",
         },
         {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-          img: "../public/images/hammereditado.png",
-        },
-        {
-          title: "Pot with a plant",
-          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          title: "Conciliación Extrajudicial",
+          text: "Conciliación o acuerdo entre las partes involucradas para evitar ir al juicio.",
           img: "../public/images/hammereditado.png",
         },
       ],

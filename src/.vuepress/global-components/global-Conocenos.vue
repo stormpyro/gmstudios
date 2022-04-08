@@ -18,7 +18,9 @@
         <h1>GM Studios</h1>
         <p>
           Profesionales comprometidos a darte un servicio honesto y de calidad.
-          Especialistas en comercio y derecho aduanero.
+          Te brindamos una atención personalizada y rápida enfocada a orientarte
+          de manera empática y realista en tu caso. Consulta nuestros servicios
+          y agenda una reunión sin compromiso.
         </p>
         <div style="display: flex">
           <vs-button @click="updateRoute" size="large">
@@ -73,11 +75,11 @@
             Necesitas ayuda en casos de <strong> comercio y aduanas? </strong>
           </div>
           <p>
-            Soy especialista en derecho aduanero. Cuento con más de 20 años de
-            experiencia en el sector. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Nesciunt id debitis, iure perspiciatis, ut odio
-            voluptas perferendis dolorum unde quos, accusantium sequi maiores ad
-            amet! Voluptates quia fuga atque laudantium.
+            Soy especialista en derecho aduanero. Cuento con más de 30 años de
+            experiencia comprobada en el sector. Si quieres conocer más del
+            sector y tener un asesoramiento profesional o guía no dudes en
+            contactarme, puedo solventar tus dudas y orientarte en los procesos
+            para que tomes la mejor decisión respecto a tu caso.
           </p>
         </div>
       </vs-col>

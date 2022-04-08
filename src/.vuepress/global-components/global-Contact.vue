@@ -29,7 +29,7 @@ export default {
       contacts: [
         {
           icon: "bx bxl-whatsapp",
-          text: "953914912 - 960108506",
+          text: "+51 953914912",
           color: "whatsapp",
           href: "https://wa.me/51953914912?text=Hola%20quisiera%20agendar%20una%20reunion",
         },
