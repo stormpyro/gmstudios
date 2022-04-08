@@ -49,7 +49,7 @@ export default {
           img: "../public/images/hammereditado.png",
         },
         {
-          title: "Litigaciones en procesos legales",
+          title: "Litigaciones en procesos judiciales",
           text: "Áreas: Derecho comercial, derecho penal en delitos aduaneros y responsabilidad contractual.",
           img: "../public/images/hammereditado.png",
         },
