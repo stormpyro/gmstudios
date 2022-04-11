@@ -15,7 +15,7 @@
         sm="12"
         w="6"
       >
-        <h1>GM Studios</h1>
+        <h1>Estudio Smart Bold Lawyer</h1>
         <p>
           Profesionales comprometidos a darte un servicio honesto y de calidad.
           Te brindamos una atención personalizada y rápida enfocada a orientarte
@@ -48,7 +48,7 @@
         w="6"
       >
         <img
-          :src="require('../public/images/hammereditado.png')"
+          :src="require('../public/images/corte_justicia.jpg')"
           alt="hammer"
           style="max-width: 100%; max-height: 100%; object-fit: cover"
         />

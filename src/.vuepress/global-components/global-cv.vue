@@ -12,16 +12,16 @@
         <vs-col
           md="7"
           sm="8"
-          style="display: flex; justify-content: flex-end"
+          style="display: flex; justify-content: center"
           w="5"
         >
           <img
-            :src="require('../public/images/hammereditado.png')"
-            alt="hammer"
+            :src="require('../public/images/foto_perfil.jpg')"
+            alt="foto_perfil"
             style="
               max-height: 400px;
               max-width: 100%;
-              min-height: 200px;
+              min-height: 300px;
               object-fit: cover;
             "
           />

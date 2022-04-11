@@ -1,7 +1,7 @@
 const { description } = require("../../package");
 
 module.exports = {
-  title: "GM Studios",
+  title: "Smart Bold Lawyer",
   description: description,
   base: "/",
   head: [

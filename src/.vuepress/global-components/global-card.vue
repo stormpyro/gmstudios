@@ -1,6 +1,6 @@
 <template>
   <div class="custom-card">
-    <div class="mb-10">
+    <div class="mb-12">
       <h4 class="mt-0 mb-4">{{ title }}</h4>
       <strong class="subtitle">{{ subtitle }} </strong>
     </div>
@@ -18,7 +18,7 @@ export default {
       type: String,
     },
     subtitle: {
-      type: "String",
+      type: String,
     },
   },
 };
@@ -42,7 +42,7 @@ export default {
 .subtitle {
   color: rgb(111, 111, 111);
 }
-.mb-10 {
-  margin-bottom: 10px;
+.mb-12 {
+  margin-bottom: 12px;
 }
 </style>

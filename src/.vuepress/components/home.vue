@@ -15,7 +15,7 @@
         "
       >
         <p style="color: #2c3e50; opacity: 0.7">
-          Copyright &copy; 2022 GM Studio
+          Copyright &copy; 2022 Smart Bols Lawyer
         </p>
       </vs-col>
     </vs-row>

@@ -36,7 +36,7 @@
       @input="activeSidebar = false"
       v-model="activeRoute"
     >
-      <template #logo> GM Studios </template>
+      <template #logo> Smart Bold Lawyer </template>
       <vs-sidebar-item
         :id="item.id"
         :key="idx"
