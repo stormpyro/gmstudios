@@ -63,24 +63,19 @@
           </vs-row>
           <vs-row style="flex-direction: column">
             <h3>Experiencia Profesional</h3>
-            <ul>
-              <li>
-                Licensed Customs Broker - Hartrodt - Mar de 2021 - dic de 2021
-                10 meses
-              </li>
-              <li>
-                Asesor Legal - Hansa Aduanas - feb de 2020 - dic de 2021 - 1 año
-                11 meses
-              </li>
-              <li>
-                Revisor en gestion aduanera - Savar Corporación Logística - ene
-                de 2008 - abr de 2019 - 11 años 4 meses
-              </li>
-              <li>
-                Sectorista en gestión aduanera - DHL Global Forwarding - feb de
-                2005 - dic de 2006 - 1 año 11 meses
-              </li>
-            </ul>
+            <card
+              :key="idx"
+              :subtitle="exp.cargo"
+              :title="exp.empresa"
+              style="margin-bottom: 10px"
+              v-for="(exp, idx) in experiencias"
+            >
+              <template #content>
+                <div class="mb-8">Duración: {{ exp.duracion }}</div>
+                <div class="mb-8">Inicio: {{ exp.inicio }}</div>
+                <div>Fin: {{ exp.fin }}</div>
+              </template>
+            </card>
           </vs-row>
         </vs-col>
       </vs-row>
@@ -101,6 +96,36 @@ export default {
         "PAS",
         "Delitos Aduaneros",
       ],
+      experiencias: [
+        {
+          empresa: "Hartrodt",
+          cargo: "Licensed Customs Broker",
+          duracion: "10 meses",
+          inicio: "Mar de 2021",
+          fin: "Dic de 2021",
+        },
+        {
+          empresa: "Hansa Aduanas",
+          cargo: "Asesor Legal",
+          duracion: "1 año 11 meses",
+          inicio: "Feb de 2020",
+          fin: "Dic de 2021",
+        },
+        {
+          empresa: "Savar Corporación Logística",
+          cargo: "Revisor en gestion aduanera",
+          duracion: "11 años 4 meses",
+          inicio: "Ene de 2008",
+          fin: "Abr de 2019",
+        },
+        {
+          empresa: "DHL Global Forwarding",
+          cargo: "Sectorista en gestión aduanera",
+          duracion: "1 año 11 meses",
+          inicio: "Feb de 2005",
+          fin: "Dic de 2006",
+        },
+      ],
     };
   },
 };
@@ -108,5 +133,11 @@ export default {
 <style scoped>
 .d-flex {
   display: flex;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.subtitle {
+  color: rgb(111, 111, 111);
 }
 </style>
