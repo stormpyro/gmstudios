@@ -91,7 +91,7 @@ import { EventBus } from "../enhanceApp";
 export default {
   data() {
     return {
-      windowWidth: window.innerWidth,
+      windowWidth: 0,
     };
   },
   methods: {
@@ -100,6 +100,7 @@ export default {
     },
   },
   mounted: function () {
+    this.windowWidth = window.innerWidth;
     window.addEventListener("resize", () => {
       this.windowWidth = window.innerWidth;
     });
