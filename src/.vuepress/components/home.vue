@@ -15,17 +15,12 @@
         "
       >
         <p style="color: #2c3e50; opacity: 0.7">
-          Copyright &copy; 2022 Smart Bols Lawyer
+          Copyright &copy; 2022 Smart Bold Lawyer
         </p>
       </vs-col>
     </vs-row>
   </div>
 </template>
-<script>
-export default {
-  data: () => ({}),
-};
-</script>
 <style scoped>
 .presentation {
   height: 500px;

@@ -56,7 +56,7 @@ import { EventBus } from "../enhanceApp";
 export default {
   data() {
     return {
-      windowWidth: window.innerWidth,
+      windowWidth: 0,
       activeSidebar: false,
       activeRoute: "conocenos",
       navBarItems: [
@@ -88,6 +88,7 @@ export default {
     };
   },
   mounted: function () {
+    this.windowWidth = window.innerWidth;
     EventBus.$on("update-route", (route) => {
       this.activeRoute = route;
       this.$router.push({ path: "/", hash: "#" + route }).catch((err) => {});
